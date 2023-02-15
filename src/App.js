@@ -1,7 +1,13 @@
-import logo from './logo.svg';
+import stocks from "./data.js"
 import './App.css';
+import Dashboard from "./pages/stocks/index.js";
 
 function App() {
+  
+  
+  console.log(stocks[0]);
+  
+  
   const testFunction = async () => {
     const response = await  fetch('/test_route');
     
@@ -9,20 +15,7 @@ function App() {
   testFunction()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Dashboard />
     </div>
   );
 }
