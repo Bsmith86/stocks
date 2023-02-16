@@ -1,7 +1,6 @@
 import stocks from "./data.js"
 import './App.css';
-import Dashboard from "./pages/stocks/index.js";
-
+import { Outlet } from "react-router-dom";
 function App() {
   
   
@@ -15,7 +14,7 @@ function App() {
   testFunction()
   return (
     <div className="App">
-      <Dashboard />
+      <Outlet />
     </div>
   );
 }

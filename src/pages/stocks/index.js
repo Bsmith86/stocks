@@ -5,10 +5,17 @@ import Card from '../../components/cards'
 import Price from '../../components/price'
 import Change from '../../components/stock'
 import './index.css'
+
 const Dashboard = () => {
   
+  
+
    const [stocks, setStocks] = useState([])
   
+
+   
+
+
    const companyJSX = () => {
     let stock = data.map((item) => {
       return <Card key={item.symbol} stock={item.name} symbol={item.symbol} lastPrice={item.lastPrice} change={item.change}/>
