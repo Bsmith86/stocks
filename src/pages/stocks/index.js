@@ -16,9 +16,9 @@ const Dashboard = () => {
    
 
 
-   const companyJSX = () => {
+    const companyJSX = () => {
     let stock = data.map((item) => {
-      return <Card key={item.symbol} stock={item.name} symbol={item.symbol} lastPrice={item.lastPrice} change={item.change}/>
+      return <Card key={item.symbol} stock={item.name} symbol={item.symbol} lastPrice={item.lastPrice} change={item.change} low={item.low} high={item.high} open={item.open} />
     })
     return stock;
   }
